@@ -1,8 +1,8 @@
-import { registerUser, loginUser } from "./services/api";
+import { registerUser, loginUser } from "../services/api";
 import { useState } from "react";
 import { Menu, X, Leaf, Globe, Wind, Droplets, Flame, ChevronRight, Mail, Phone, MapPin, Star, Send, User, LogOut, ArrowRight, BookOpen, Users, MessageSquare, Home } from "lucide-react";
 import { useEffect } from "react";
-import { getArticles } from "./services/api";
+import { getArticles } from "../services/api";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
