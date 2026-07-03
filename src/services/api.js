@@ -1,5 +1,5 @@
-const API_URL = "https://climateactwebapp-production.up.railway.app";
 
+const API_URL = import.meta.env.VITE_API_URL;
 // ARTICLES
 export async function getArticles() {
   const response = await fetch(`${API_URL}/api/articles`);
