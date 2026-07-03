@@ -37,7 +37,9 @@ interface TeamMember {
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
-const [articles, setArticles] = useState([]);
+function App() {
+  const [articles, setArticles] = useState([]);
+}
 
 const TEAM: TeamMember[] = [
   {
