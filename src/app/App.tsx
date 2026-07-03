@@ -1045,12 +1045,14 @@ export default function App() {
   };
 
   const handleSetPage = (page: Page) => {
-    if (page === "profile" && !isLoggedIn) {
-      setShowAuth(true);
-      return;
-    }
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  if (page === "profile" && !isLoggedIn) {
+    setShowAuth(true);
+    return;
+  }
+
+  setCurrentPage(page);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
   useEffect(() => {
   const token = localStorage.getItem("token");
